@@ -1,0 +1,26 @@
+name: Protocol & macOS Verification
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+jobs:
+  verify-protocol-vectors:
+    name: Verify Canonical DLSP/1 Vectors
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Verify test_vectors.json is deterministic and up-to-date
+        run: |
+          cp protocol/test_vectors.json /tmp/expected_vectors.json
+          node protocol/generate_vectors.mjs
+          diff -u /tmp/expected_vectors.json protocol/test_vectors.json

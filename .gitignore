@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+*.xcuserstate
+macos/.build/
+macos/.swiftpm/
+dist/
+*.dmg
+
+# Android / Gradle
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/.idea/
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# Test artifacts
+*.tmp
+*.part
+.droplink-*
+node_modules/

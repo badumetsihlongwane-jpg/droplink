@@ -1,0 +1,38 @@
+{
+  "protocol": "DLSP/1",
+  "sessionId": "a1b2c3d4e5f60718293a4b5c6d7e8f90",
+  "mode": "pair",
+  "deviceId": "550e8400-e29b-41d4-a716-446655440000",
+  "pskHex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+  "pskBase64Url": "AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8",
+  "clientPrivHex": "11223344556677889900aabbccddeeff11223344556677889900aabbccddeeff",
+  "clientPubHex": "0443ec3091b254ba400772bb6ccfb723ca8484e595600aa1ce694d6b6a0e5c07a073fd34d82469680101d5a37d5a4900ce8fcf0754e2a28fbffa9f4e2e1f3a74ac",
+  "serverPrivHex": "ffeeddccbbaa00998877665544332211ffeeddccbbaa00998877665544332211",
+  "serverPubHex": "047204129c7c631ef5e9ece3d46d0964a1355e6ab86f0316c6fbd13fd4175e851e35c23c5137614754023775655c5219b969a7f2f165dd844507daaa3af00fa655",
+  "ecdhSharedHex": "d49035faffee29806ced8378ce49827ac3a57c6abe45df8f9905e799751699c3",
+  "clientNonce": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+  "serverNonce": "fedcba9876543210fedcba9876543210fedcba9876543210fedcba9876543210",
+  "clientProofHex": "6f4c295a0a36a9e1198941786fd5a724d2d3115e7e4cc31eede784611d0b32fe",
+  "serverProofHex": "3b6bd601d79cd5230e538fc891a0688361ce92329bf3a9c175b52c00aa307125",
+  "saltHex": "dc9dae3dea29e6da30b479802b914bb9606cf21ca1926ffa2981f0e3212f3b48",
+  "c2sKeyHex": "bf3c7ff2df33162f066644583f456a069fbad28f5476f0e05dd0f9338cba85a4",
+  "s2cKeyHex": "5a4a7029b941655c958c37287a3c5e1ac7ddf160c9710045bf692a7a0e8aad4a",
+  "reconnectKeyHex": "c50f6983b85ca37487731eecc4b0c3c03c19277c9646bd0e7a6b2d2d9d41947a",
+  "frameC2SSeq0": {
+    "direction": 1,
+    "seq": 0,
+    "plaintextHex": "017b227473223a313730303030303030303030307d",
+    "nonceHex": "000000010000000000000000",
+    "aadHex": "00000001000000000000000000000015",
+    "ciphertextAndTagHex": "b14aec0cefc7ec2fb5d0898f52c1f4c7b7859bc4a0009a1b4cb753705886627d7adf0dd98c"
+  },
+  "frameS2CSeq0": {
+    "direction": 2,
+    "seq": 0,
+    "plaintextHex": "027b227473223a313730303030303030303030307d",
+    "nonceHex": "000000020000000000000000",
+    "aadHex": "00000002000000000000000000000015",
+    "ciphertextAndTagHex": "720120a21e06d0125a79eb9d22d801d28c9e124475ce909ead63b5a95d01b50c2fff39d038"
+  },
+  "qrUri": "droplink://pair?v=1&h=192.168.1.42,10.0.0.5&p=54321&s=a1b2c3d4e5f60718293a4b5c6d7e8f90&k=AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8&e=1900000000&n=MacBook%20Air"
+}
